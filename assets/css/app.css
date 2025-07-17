@@ -54,16 +54,12 @@ body {
 
 .global-wrapper {
   max-width: 500px;
-  min-height: 100dvh;
+  height: 100dvh; /* ← use dynamic viewport height */
   width: 100vw;
+  overflow: hidden;
   background-color: #ffffff;
   box-shadow: 0 0 3px 0 #65656568;
   position: relative;
-  box-sizing: border-box;
-
-  /* ✅ Required to fix iOS */
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .slides-wrapper {
