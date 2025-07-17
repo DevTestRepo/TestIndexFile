@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: myFirstFont;
   src: url("../fonts/Noto_Sans/NotoSans-Light.ttf");
 }
@@ -34,7 +34,8 @@
   font-family: Mid;
 }
 html {
-  font-size: 10px !important;
+  
+  font-size: clamp(10px, 2.5vw, 16px);
   font-family: myFirstFont !important;
   line-height: 1.1 !important;
 }
@@ -54,7 +55,7 @@ body {
 
 .global-wrapper {
   max-width: 500px;
-  height: 100vh;
+  height: 100dvh; /* ← use dynamic viewport height */
   width: 100vw;
   overflow: hidden;
   background-color: #ffffff;

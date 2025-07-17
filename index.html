@@ -36,14 +36,16 @@
     <link rel="stylesheet" href="./assets/css/pwa.css?v=13">
     <link rel="stylesheet" href="./assets/css/app.css?v=9">
     <link rel="stylesheet" href="./assets/css/jquery.steps.css">
-
-    <style type="text/tailwindcss">
-        @layer utilities {
-              .content-auto {
-                content-visibility: auto;
-              }
-            }
-          </style>
+<style type="text/tailwindcss">
+  @layer utilities {
+    .pt-safe-top {
+      padding-top: env(safe-area-inset-top);
+    }
+    .pb-safe-bottom {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
+</style>
     <script src=https://assets.adobedtm.com/22baa8e94be8/5bb5e9f4ab23/launch-b42a8577c9ae-development.min.js async>
     </script>
 </head>
@@ -63,7 +65,7 @@
 " id="loadingWindow">
 
 
-      <div class="flex flex-col justify-center items-center px-4 box-border w-full" >
+<div class="pt-safe-top pb-safe-bottom min-h-screen flex flex-col justify-center items-center">
         <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
         <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
         <section class="mt-4 font-thin text-4xl">
