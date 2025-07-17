@@ -18,15 +18,33 @@
         }
       }
     </style>
+    <style>
+      .vertical-label {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: lighter;
+        margin-right: 8px;
+        color: white;
+      }
+      .footer-text {
+        font-size: 8px;
+        font-family: Arial, sans-serif;
+        font-weight: lighter;
+        color: white;
+        line-height: 1.4;
+      }
+    </style>
   </head>
 
   <body id="app">
     <div class="global-wrapper">
-      <div class="flex-col text-[#fff] flex min-h-screen bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center" id="loadingWindow">
-        <div class="flex flex-col justify-center items-center px-4 box-border w-full">
+      <div class="flex flex-col min-h-screen bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center text-white" id="loadingWindow">
+        <div class="flex flex-col justify-center items-center px-4 box-border w-full text-center">
           <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
-          <p class="font-black text-4xl sm:text-5xl lg:text-6xl bold-family my-8 text-center">Virtual Nurse</p>
-          <section class="mt-4 text-lg sm:text-xl text-center">
+          <p class="font-black text-4xl sm:text-5xl lg:text-6xl bold-family my-8">Virtual Nurse</p>
+          <section class="mt-4 text-lg sm:text-xl">
             <p class="mb-2">Growth hormone</p>
             <p>Daily treatment</p>
           </section>
@@ -34,7 +52,7 @@
             <div class="loading-bar bg-gray-300 rounded h-2">
               <section class="w-1/2 bg-purple-600 h-2 rounded"></section>
             </div>
-            <p class="text-center text-base font-semibold mt-4">Virtual Nurse is loading...</p>
+            <p class="text-base font-semibold mt-4">Virtual Nurse is loading...</p>
           </section>
           <section class="mt-12">
             <img class="w-48" src="./assets/icons/logo2-w.svg" alt="Pfizer Secondary Logo" />
@@ -42,18 +60,16 @@
 
           <div class="px-4 w-full max-w-[800px] mt-8 sm:mt-16 overflow-hidden">
             <div class="flex flex-row items-start gap-2 w-full">
-              <p class="text-[10px] font-light font-sans shrink-0" style="writing-mode: vertical-rl; transform: rotate(180deg); line-height: 1; margin-right: 8px;">
-                PP-GEN-IND-1075
-              </p>
+              <p class="vertical-label">PP-GEN-IND-1075</p>
               <div class="text-left w-full max-w-[600px] space-y-2">
-                <p class="text-[8px] font-light font-sans leading-snug break-words">
+                <p class="footer-text">
                   Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC,
                   Bandra (East), Mumbai – 400051, India
                 </p>
-                <p class="text-[8px] font-light font-sans leading-snug break-words">
+                <p class="footer-text">
                   Trademark & Licensed user - Genotropin ® Trademark Proprietor: Pfizer Health AB
                 </p>
-                <p class="text-[8px] font-light font-sans leading-snug break-words">
+                <p class="footer-text">
                   Licensed User: Pfizer Products India Private Limited, India
                 </p>
               </div>
