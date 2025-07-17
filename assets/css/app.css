@@ -58,8 +58,6 @@ body {
   height: 100dvh; /* ← use dynamic viewport height */
   width: 100vw;
   overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0 0 3px 0 #65656568;
   position: relative;
 }
 
