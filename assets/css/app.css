@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: myFirstFont;
   src: url("../fonts/Noto_Sans/NotoSans-Light.ttf");
 }
@@ -55,19 +55,16 @@ body {
 
 .global-wrapper {
   max-width: 500px;
-  min-height: 100dvh;
+  min-height: 100dvh; /* use dynamic viewport height */
   width: 100vw;
-  box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 0 3px 0 #65656568;
-
-  /* ✅ Add these to support iOS safe areas */
-  
+  position: relative;
+  padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
-
-  /* ✅ REMOVE this line if present anywhere in parent chain */
-  /* overflow: hidden; */
+  box-sizing: border-box;
 }
+
 
 .slides-wrapper {
   position: absolute;
