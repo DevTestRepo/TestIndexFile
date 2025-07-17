@@ -62,7 +62,7 @@ body {
   box-shadow: 0 0 3px 0 #65656568;
 
   /* ✅ Add these to support iOS safe areas */
-  padding-top: env(safe-area-inset-top);
+  
   padding-bottom: env(safe-area-inset-bottom);
 
   /* ✅ REMOVE this line if present anywhere in parent chain */
