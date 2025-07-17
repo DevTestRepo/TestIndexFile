@@ -35,16 +35,32 @@
     <link rel="stylesheet" href="./assets/css/pwa.css?v=13">
     <link rel="stylesheet" href="./assets/css/app.css?v=9">
     <link rel="stylesheet" href="./assets/css/jquery.steps.css">
-<style type="text/tailwindcss">
-  @layer utilities {
-    .pt-safe-top {
-      padding-top: env(safe-area-inset-top);
-    }
-    .pb-safe-bottom {
-      padding-bottom: env(safe-area-inset-bottom);
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {},
+    },
+    plugins: [],
   }
-</style>
+
+  // Custom utility
+  tailwind.config.content = [{ raw: '<div class="pt-safe-top pb-safe-bottom"></div>' }];
+
+  tailwind.config.plugins = [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.pt-safe-top': {
+          paddingTop: 'env(safe-area-inset-top)',
+        },
+        '.pb-safe-bottom': {
+          paddingBottom: 'env(safe-area-inset-bottom)',
+        },
+      })
+    }
+  ]
+</script>
+
     <script src=https://assets.adobedtm.com/22baa8e94be8/5bb5e9f4ab23/launch-b42a8577c9ae-development.min.js async>
     </script>
 </head>
