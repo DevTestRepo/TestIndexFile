@@ -54,7 +54,7 @@ body {
 
 .global-wrapper {
   max-width: 500px;
-  height: 100dvh; /* ← use dynamic viewport height */
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   background-color: #ffffff;
@@ -249,9 +249,9 @@ body {
   align-items: flex-start;
   padding: 8px 12px;
   gap: 1px;
-  color: #3a5bab;
+  color: #661F8B;
   /* Ngenla grey */
-  background: #e0e5f2;
+  background: #EFE2F7;
   border-radius: 4px;
 }
 
@@ -269,7 +269,7 @@ body {
 }
 
 .bullet.selected {
-  background-color: #2f52a7;
+  background-color: #661F8B;
 
 }
 

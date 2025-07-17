@@ -16,7 +16,7 @@ body {
 }
 
 .box .img-logo img {
-    max-width: 80%;
+    width: 250px;
 }
 
 .box .confirm-box {
@@ -83,7 +83,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    top: -2px;
+    top: 2px;
     left: 8px;
     width: 3px;
     height: 15px;
@@ -135,17 +135,11 @@ button:hover {
         width: 300px;
     }
 
-    .box .img-logo img {
-        max-width: 50%;
-    }
-    
-
     .box .confirm-box .confirm-buttons {
         flex-direction: column;
     }
 
     button {
         margin-top: 10px;
-        max-width: 100%;
     }
 }

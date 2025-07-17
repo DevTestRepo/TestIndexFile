@@ -86,7 +86,7 @@ $(document).ready(function () {
     let penParam = getCookie("global_geno_pen");
     let penTypeParam = getCookie("global_geno_pen_type");
     if (penTypeParam.length >= 5 ){
-      console.log(location.origin + "/global/genotropin/" + penParam + "/" + penTypeParam + "/index.html");
+      // console.log(location.origin + "/global/genotropin/" + penParam + "/" + penTypeParam + "/index.html");
       // window.location.href = location.origin + "/global/genotropin/" + penParam + "/" + penTypeParam + "/index.html";
     }
     
@@ -96,7 +96,7 @@ $(document).ready(function () {
     }
 
     if (penTypeParam.length <= 2) {
-      console.log(location.origin + "/global/genotropin" + "/index.html");
+      // console.log(location.origin + "/global/genotropin" + "/index.html");
       // window.location.href = location.origin + "/global/genotropin" + "/changepen.html";
       $('div > div.owl-stage-outer > div > div > li:eq(0)').addClass('disabled');
       $('div > div.owl-stage-outer > div > div > li:eq(1)').addClass('disabled');

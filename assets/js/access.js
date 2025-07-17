@@ -1,10 +1,6 @@
 
 function checkAccess(cmp_name){
-        window.history.pushState("", "", `${location.pathname}?cmp=${cmp_name}`);
-}
-
-function isRunningStandalone() {
-    return navigator.standalone || (window.matchMedia('(display-mode: standalone)').matches);
+        window.history.replaceState("", "", `${location.pathname}?cmp=${cmp_name}`);
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -28,4 +24,9 @@ function getCookie(cname) {
         }
     }
     return 0;
+}
+
+
+function isRunningStandalone() {
+    return navigator.standalone || (window.matchMedia('(display-mode: standalone)').matches);
 }
