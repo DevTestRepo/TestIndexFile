@@ -43,23 +43,22 @@
               }
             }
           </style>
+ <style>
+  #loadingWindow {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+</style>
     <script src=https://assets.adobedtm.com/22baa8e94be8/5bb5e9f4ab23/launch-b42a8577c9ae-development.min.js async>
     </script>
 </head>
 
   <body id="app" onload="verify('Oc1MOrVb13cgISQYpIaTksH','QR_MR1_NEG_Vnurseglobal','con_main')">
     <div class="global-wrapper">
-        <div class="
-                flex-col
-                text-[#fff]
-                flex
-                absolute
-                bg-[#fff]
-                z-20
-                bg-[url('./assets/icons/loading-bg.svg')] bg-cover
-                justify-center items-center
-              " id="loadingWindow">
-
+        <div id="loadingWindow" class="flex flex-col justify-center items-center text-white bg-[url('./assets/icons/loading-bg.svg')] bg-cover">
       <div class="flex flex-col justify-center items-center px-4 box-border w-full" >
         <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
         <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
