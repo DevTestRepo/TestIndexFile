@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Genotropin VIRTUAL NURSE</title>
     <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width" />
     <!-- PWA -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/pwa_logo_32x32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="./assets/icons/pwa_logo_48x48.png">
@@ -44,11 +44,8 @@
     </style>
   </head>
 
-  <body 
-
-   id="app" >
+<body id="app" onload="verify('EM659iqRyWvLcr02V','QR_MR1_GENO_Vnurseglobal','con_main')">
     <!--[if lt IE 7]>
-    onload="verify('EM659iqRyWvLcr02V','QR_MR1_GENO_Vnurseglobal','con_main')"
       <p class="chromeframe">
         You are using an <strong>outdated</strong> browser. Please
         <a href="http://browsehappy.com/">upgrade your browser</a> or
@@ -58,15 +55,13 @@
         to improve your experience.
       </p>
     <![endif]-->
-   <div class="global-wrapper">
-       <div
-        class="flex-col text-[#fff] flex absolute bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center"
+    <div class="global-wrapper">
+      <div
+        class="flex-col text-[#fff] flex absolute inset-0 bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center"
         id="loadingWindow"
       >
-
-<div class="flex w-full items-center justify-center flex-col min-h-screen pb-safe-bottom">
-        <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
-    
+        <div class="flex-1 flex flex-col justify-center items-center">
+          <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
           <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
           <section class="mt-4 font-thin text-4xl">
             <p class="mb-4">Growth hormone</p>
@@ -80,32 +75,38 @@
               Virtual Nurse is loading...
             </p>
           </section>
-          
+          <section class="mt-40">
+            <img class="w-[12rem]" src="./assets/icons/logo2-w.svg" />
+          </section>
 
-<div class="flex flex-col items-center w-full px-4 max-w-[800px] mt-10 pb-[env(safe-area-inset-bottom)]">
-  <img class="w-[12rem] mb-2" src="./assets/icons/logo2-w.svg" />
-   <div class="flex flex-row items-end justify-start gap-2 w-full">
-    <p style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-family: Arial, sans-serif; font-weight: lighter; margin-right: 20px;">       
-     PP-GEN-IND-1075
-  </p>
- <!-- Main Content on the Right -->
-   <div class="text-left max-w-[600px] w-full space-y-[2px]">
-      <p class="text-[8px] font-light font-sans leading-tight">
-                        Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC, Bandra (East), Mumbai – 400051, India
+          <div style="display: flex; flex-direction: column; align-items: center; padding-top: 15vh;">
+    
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 90%; max-width: 800px;">
+                <!-- Vertical Text on the Left -->
+                <p style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-family: Arial, sans-serif; font-weight: lighter; margin-right: 20px;">PP-GEN-IND-1075</p>
+        
+                <!-- Main Content on the Right -->
+                <div style="text-align: center; max-width: 600px;">
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                        Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC, 
+                        Bandra (East), Mumbai – 400051, India
                     </p>
-                    <p class="text-[8px] font-light font-sans leading-tight">
+                    <br>
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
                         Trademark & Licensed user - Genotropin &reg; Trademark Proprietor: Pfizer Health AB 
                     </p>
-                     <p class="text-[8px] font-light font-sans leading-tight">
+                    <br>
+                    <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
                         Licensed User: Pfizer Products India Private Limited, India
                     </p>
                 </div>
             </div>
-        </div> 
-               </div>
-         </div>
+        
+        </div>
+          
 
-
+        </div>
+      </div>
       <div id="allPages" class="slides-wrapper pt-5 hidden">
         <div id="outerStepper">
           <h2></h2>
@@ -194,26 +195,9 @@
                       </div>
                   </div>
 
-                  <div class="ad2hs-prompt-container w-[100%] !h-[90vh] andriod ">
-<div class="action"
-     style="
-       position:fixed;
-       top:0; left:0; right:0;
-       height:60px;
-
-       /* iOS notch / Dynamic Island safety */
-       padding-top:env(safe-area-inset-top);
-       padding-left:env(safe-area-inset-left);
-       padding-right:env(safe-area-inset-right);
-
-       /* layout + look */
-       display:flex;
-       justify-content:space-between;
-       align-items:center;
-       background:#fff;          /* bar colour */
-       box-shadow:0 4px 20px rgba(0,0,0,.05);
-       z-index:999;
-     ">                          <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
+                  <div class="ad2hs-prompt-container w-[100%] !h-[90vh] andriod">
+                      <div class="action">
+                          <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
                           <p>Virtual Nurse</p>
                           <a href="#" class="ad2hs-prompt" role="outer-next">Add</a>
                       </div>
@@ -445,8 +429,6 @@
         </div>
       </div>
     </div>
-    </div>
-   </div>
     <script src="./assets/js/jquery-1.9.1.min.js"></script>
     <script src="./assets/js/jquery.cookie-1.3.1.js"></script>
     <script src="./assets/js/lang.js"></script>
