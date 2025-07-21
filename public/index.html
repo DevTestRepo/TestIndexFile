@@ -195,8 +195,25 @@
                   </div>
 
                   <div class="ad2hs-prompt-container w-[100%] !h-[90vh] andriod ">
-                      <div class="action  padding-top: env(safe-area-inset-top)">
-                          <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
+<div class="action"
+     style="
+       position:fixed;
+       top:0; left:0; right:0;
+       height:60px;
+
+       /* iOS notch / Dynamic Island safety */
+       padding-top:env(safe-area-inset-top);
+       padding-left:env(safe-area-inset-left);
+       padding-right:env(safe-area-inset-right);
+
+       /* layout + look */
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       background:#fff;          /* bar colour */
+       box-shadow:0 4px 20px rgba(0,0,0,.05);
+       z-index:999;
+     ">                          <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
                           <p>Virtual Nurse</p>
                           <a href="#" class="ad2hs-prompt" role="outer-next">Add</a>
                       </div>
