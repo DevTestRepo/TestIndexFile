@@ -35,7 +35,7 @@
 }
 html {
   
-  font-size: clamp(10px, 2.5vw, 16px);
+  font-size: 10px !important;
   font-family: myFirstFont !important;
   line-height: 1.1 !important;
 }
