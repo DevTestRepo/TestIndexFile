@@ -34,8 +34,7 @@
   font-family: Mid;
 }
 html {
-  
-  font-size: 10px !important;
+  font-size: clamp(10px, 2.5vw, 16px);
   font-family: myFirstFont !important;
   line-height: 1.1 !important;
 }
@@ -53,7 +52,6 @@ body {
 
 }
 
-
 .global-wrapper {
   max-width: 500px;
   min-height: 100dvh; /* use dynamic viewport height */
@@ -64,8 +62,6 @@ body {
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   box-sizing: border-box;
-  padding-top:env(safe-area-inset-top);
-
 }
 
 .slides-wrapper {
@@ -255,9 +251,9 @@ body {
   align-items: flex-start;
   padding: 8px 12px;
   gap: 1px;
-  color: #661F8B;
+  color: #3a5bab;
   /* Ngenla grey */
-  background: #EFE2F7;
+  background: #e0e5f2;
   border-radius: 4px;
 }
 
@@ -275,7 +271,7 @@ body {
 }
 
 .bullet.selected {
-  background-color: #661F8B;
+  background-color: #2f52a7;
 
 }
 
