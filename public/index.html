@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>GenryzonPfizerGlobal</title>
         <meta name="theme-color" content="white" />
@@ -35,7 +35,6 @@
     <link rel="stylesheet" href="./assets/css/pwa.css?v=13">
     <link rel="stylesheet" href="./assets/css/app.css?v=9">
     <link rel="stylesheet" href="./assets/css/jquery.steps.css">
-
     <style type="text/tailwindcss">
         @layer utilities {
               .content-auto {
@@ -47,50 +46,65 @@
     </script>
 </head>
 
-  <body id="app"><!-- onload="verify('Oc1MOrVb13cgISQYpIaTksH','QR_MR1_NEG_Vnurseglobal','con_main')">-->
+<body id="app" onload="verify('Oc1MOrVb13cgISQYpIaTksH','QR_MR1_NEG_Vnurseglobal','con_main')">
     <div class="global-wrapper">
- <div
-  class="flex-col text-[#fff] flex absolute bg-[#fff] z-20 bg-[url('./assets/icons/loading-bg.svg')] bg-cover justify-center items-center"
-  id="loadingWindow"
-    >
-     <div class="flex w-full items-center justify-center flex-col min-h-screen pb-safe-bottom">
-        <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
-        <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
-        <section class="mt-4 font-thin text-4xl">
-          <p class="mb-4">Growth hormone</p>
-          <p>Weekly treatment</p>
-        </section>
-        <section class="mt-20">
-          <div class="loading-bar">
-            <section></section>
-          </div>
-          <p class="text-center text-2xl font-semibold mt-4">Virtual Nurse is loading...</p>
-        </section>
-        
+        <div class="
+                flex-col
+                text-[#fff]
+                flex
+                absolute
+                inset-0
+                bg-[#fff]
+                z-20
+                bg-[url('./assets/icons/loading-bg.svg')] bg-cover
+                justify-center items-center
+              " id="loadingWindow">
+            <div class="flex-1 flex flex-col justify-center items-center">
+                <img class="w-[8rem]" src="./assets/icons/logo-w.svg" />
+                <p class="font-black text-6xl bold-family my-12">Virtual Nurse</p>
+                <section class="mt-4 font-thin text-4xl">
+                    <p class="mb-4">Growth hormone</p>
+                    <p>Weekly treatment</p>
+                </section>
+                <section class="mt-20">
+                    <div class="loading-bar">
+                        <section></section>
+                    </div>
+                    <p class="text-center text-2xl font-semibold mt-4">Virtual Nurse is loading...</p>
+                </section>
+                <section class="mt-40">
+                    <img class="w-[12rem]" src="./assets/icons/logo2-w.svg" />
+                </section>
 
-<div class="flex flex-col items-center w-full px-4 max-w-[800px] mt-10 pb-[env(safe-area-inset-bottom)]">
-  <img class="w-[12rem] mb-2" src="./assets/icons/logo2-w.svg" />
-  <div class="flex flex-row items-end justify-start gap-2 w-full">
-    <p style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-family: Arial, sans-serif; font-weight: lighter; margin-right: 20px;">
-                            PP-GEN-IND-1075
-                        </p>         
-           <div class="text-left max-w-[600px] w-full space-y-[2px]">
-                <p class="text-[8px] font-light font-sans leading-tight">
-                Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC, Bandra (East), Mumbai – 400051, India
-              </p>
-              
-                <p class="text-[8px] font-light font-sans leading-tight">
-                        Trademark & Licensed user - Genotropin &reg; Trademark Proprietor: Pfizer Health AB 
-               </p>
-             
-                <p class="text-[8px] font-light font-sans leading-tight">
-                Licensed User: Pfizer Products India Private Limited, India
-              </p>
+                <div style="display: flex; flex-direction: column; align-items: center; padding-top: 15vh;">
+    
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 90%; max-width: 800px;">
+                        <!-- Vertical Text on the Left -->
+                        <p style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; font-family: Arial, sans-serif; font-weight: lighter; margin-right: 20px;">
+                            PP-SMT-IND-0112
+                        </p>
+                
+                        <!-- Main Content on the Right -->
+                        <div style="text-align: center; max-width: 600px;">
+                            <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                                Address - Pfizer Products India Private Limited, The Capital, ‘G’ Block, BKC,
+                                Bandra (East), Mumbai – 400051, India
+                            </p>
+                            <br>
+                            <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                                Trademark & Licensed user – Somatrogon ®Trademark Proprietor: Pfizer Inc., USA 
+                            </p>
+                            <br>
+                            <p style="font-size: 8px; font-family: Arial, sans-serif; font-weight: lighter;">
+                                Licensed User: Pfizer Products India Private Limited, India
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+
             </div>
-           </div>
-           </div>
-          </div>
-         </div>
+        </div>
         <div id="allPages" class="slides-wrapper pt-5 hidden">
 
             <div id="outerStepper">
@@ -184,25 +198,7 @@
                                 </div>
 
                                 <div class="ad2hs-prompt-container w-[100%] !h-[90vh] andriod">
-                                    <div class="action"
-     style="
-       position:fixed;
-       top:0; left:0; right:0;
-       height:60px;
-
-       /* iOS notch / Dynamic Island safety */
-       padding-top:env(safe-area-inset-top);
-       padding-left:env(safe-area-inset-left);
-       padding-right:env(safe-area-inset-right);
-
-       /* layout + look */
-       display:flex;
-       justify-content:space-between;
-       align-items:center;
-       background:#fff;          /* bar colour */
-       box-shadow:0 4px 20px rgba(0,0,0,.05);
-       z-index:999;
-     ">
+                                    <div class="action">
                                         <a href="#" id="ad2hs-prompt-close-2" role="outer-next">Skip</a>
                                         <p>Virtual Nurse</p>
                                         <a href="#" class="ad2hs-prompt" role="outer-next">Add</a>
@@ -225,217 +221,147 @@
                 </section>
                 <h2></h2>
                 <section>
-   <div class="stepper-container">
-              <header
-                class="pagination-header"
-                id="paginationHeader"
-                class="font-semibold"
-              >
-                <div>
-                  <p class="text-[1.6rem]">
-                    Step <span id="currentStepNumber"></span>/
-                    <span id="lastStep"></span>
-                  </p>
-                  <p
-                    class="text-lg bold-family font-semibold"
-                    id="currentStepLabel"
-                  ></p>
-                </div>
-                <div id="nav2">
-                  <p class="text-[1.6rem]">
-                    Step <span id="nextStepNumber"></span>/
-                    <span id="lasstStep"></span>
-                  </p>
-                  <p class="text-lg bold-family" id="nextStepLabel"></p>
-                </div>
-              </header>
-              <div id="introStepper">
-                <!-- STEP 0 -->
-                <h2></h2>
-                <section></section>
+                    <div class="stepper-container">
+                        <header class="pagination-header" id="paginationHeader" class="font-semibold">
+                            <div>
+                                <p class="text-[1.6rem]">
+                                    Step <span id="currentStepNumber"></span>/6
+                                </p>
+                                <p class="text-lg bold-family  font-semibold" id="currentStepLabel"></p>
+                            </div>
+                            <div id="nav2">
+                                <p class="text-[1.6rem]">
+                                    Step <span id="nextStepNumber"></span>/6
+                                </p>
+                                <p class="text-lg bold-family " id="nextStepLabel"></p>
+                            </div>
+                        </header>
+                        <div id="introStepper">
+                            <!-- STEP 0 -->
+                            <h2></h2>
+                            <section></section>
+                            <!-- END STEP 0 -->
+                            <!-- STEP 1 -->
+                            <h2></h2>
+                            <section class="step" style="padding-bottom: 7rem;">
+                                <header>
+                                    <p class="text-6xl" word="Select the device"></p>
+                                    <p class="text-3xl" word="by type"></p>
+                                </header>
+                                <section onclick="setDos('24')" class="selection flex items-center"
+                                    role="intro-next">
+                                    <img class="mr-4" src="./assets/icons/pen-icon.svg" alt="">
+                                    <p class="text-xl  bold-family">Genryzon Pen 24mg</p>
+                                </section>
+                                <section onclick="setDos('60')" class="selection flex items-center"
+                                    role="intro-next">
+                                    <img class="mr-4" src="./assets/icons/pen-icon.svg" alt="">
+                                    <p class="text-xl  bold-family">Genryzon Pen 60mg</p>
+                                </section>
 
-                <h2></h2>
-                <section class="step" style="padding-bottom: 0rem">
-                  <header>
-                    <p class="text-6xl" word="Select the device"></p>
-                    <p class="text-3xl" word="by type"></p>
-                  </header>
-                  <div
-                    style="height: 400px; overflow-y: auto"
-                    id="dosesContainer"
-                  ></div>
-                </section>
-                <h2></h2>
-                <section class="step" style="padding-bottom: 7rem">
-                  <header>
-                    <p class="text-6xl" word="Select"></p>
-                    <p class="text-3xl" word="Your type of experience"></p>
-                  </header>
-                  <section
-                    onclick="setExperienceType('usingNewGoQuick')"
-                    class="selection items-center"
-                    role="intro-next"
-                    id="test"
-                  >
-                    <div class="flex">
-                      <!-- <img class="mr-4" src="./icons/pen-icon.svg" alt="" /> -->
-                      <p class="text-xl bold-family">
-                        Setting up and using a new GoQuick Pen
-                      </p>
+                            </section>
+                            <!-- END STEP 1 -->
+
+                            <!-- STEP 2 -->
+                            <h2></h2>
+                            <section class="step" role="intro-next" data-role="touch" data-on-swipe-right="goBack"
+                                data-on-swipe-left="goNext">
+                                <header>
+                                    <p class="text-6xl" word="Follow the guide"></p>
+                                    <p class="text-3xl" word="to inject correctly"></p>
+                                </header>
+                                <img class="w-[86.1%]" src="./assets/icons/follow-the-guide.png" alt=""
+                                    role="intro-next">
+                                <div class="mt-8">
+                                    <p class="text-[1.8rem] font-semibold" word="step4Text"></p>
+                                </div>
+                            </section>
+                            <!-- END STEP 2 -->
+
+                            <!-- STEP  3-->
+                            <h2></h2>
+                            <section class="step" data-role="touch" data-on-swipe-right="goBack"
+                                data-on-swipe-left="goNext">
+                                <header>
+                                    <p class="text-6xl" word="View injection sites"></p>
+                                    <p class="text-3xl" word="& learn about all areas"></p>
+                                </header>
+                                <img class="w-[86.1%]" src="./assets/icons/step5.png" alt="" role="intro-next" />
+                                <div>
+                                    <p class="text-[1.4rem] font-semibold" word="step5Text"></p>
+                                </div>
+                            </section>
+                            <!-- END STEP 3 -->
+
+                            
+
+                            <!-- STEP 4 -->
+                            <h2></h2>
+                            <section class="step" data-role="touch" data-on-swipe-right="goBack"
+                                data-on-swipe-left="goNext">
+                                <header>
+                                    <p class="text-6xl" word="Use the device"></p>
+                                    <p class="text-3xl" word="correctly"></p>
+                                </header>
+                                <img class="w-[86.1%]" src="./assets/icons/step7.png" alt="" role="intro-next">
+                                <div>
+                                    <p class="text-[1.8rem] font-semibold" word="step7Text"></p>
+                                </div>
+                            </section>
+                            <!-- END STEP 4 -->
+                            <!-- STEP 5 -->
+                            <h2></h2>
+                            <section class="step" data-role="touch" data-on-swipe-right="goBack"
+                                data-on-swipe-left="goNext">
+                                <header>
+                                    <p class="text-6xl" word="Change your device"></p>
+                                    <p class="text-3xl" word="simply and easily"></p>
+                                </header>
+                                <img class="w-[86.1%]" src="./assets/icons/step6.png" alt="" role="intro-next">
+                                <div>
+                                    <p class="text-[1.8rem] font-semibold" word="step6Text"></p>
+                                </div>
+                            </section>
+                            <!-- END STEP 5 -->
+							
+                            <!-- STEP  6-->
+                            <h2></h2>
+                            <section class="step" data-role="touch" data-on-swipe-right="goBack">
+                                <header>
+                                    <p class="text-6xl" word="Find notes & tips"></p>
+                                    <p class="text-3xl" word="about each injection step"></p>
+                                </header>
+                                <img class="w-[86.1%]" src="./assets/icons/step8.png" alt="">
+                                <div>
+                                    <p class="text-[1.8rem] font-semibold" word="step8Text"></p>
+                                </div>
+                            </section>
+                            <!-- END STEP 6 -->
+                        </div>
+                        <footer id="Footer" style="margin-bottom:30px;">
+                            <div class="mt-4">
+                                <section class="flex justify-center gap-2">
+                                    <div style="display: none;" class="bullet selected"></div>
+                                    <div class="bullet selected"></div>
+                                    <div class="bullet"></div>
+                                    <div class="bullet"></div>
+                                    <div class="bullet"></div>
+                                    <div class="bullet"></div>
+                                </section>
+                            </div>
+                            <section class="mt-12">
+                                <p class="cursor-pointer text-[1.6rem] inline font-semibold bold-family fixed bottom-10 right-10 h-16 w-30"
+                                    id="skipIntroBtn">Skip
+                                    intro >
+                                </p>
+                            </section>
+                        </footer>
                     </div>
-                    <span
-                      style="font-size: 11px; color: #555581"
-                      class="text-sm bold-family"
-                      >This is the first time I use a new GoQuick Pen
-                    </span>
-                  </section>
-
-                  <section
-                    onclick="setExperienceType('RoutineUseGoQuick')"
-                    class="selection items-center"
-                    role="intro-next"
-                  >
-                    <div class="flex">
-                      <!-- <img class="mr-4" src="./assets/icons/pen-icon.svg" alt="" /> -->
-                      <p class="text-xl bold-family">Routine use of GoQuick</p>
-                    </div>
-                    <span style="font-size: 11px; color: #555581"
-                      >After setting up and first use of GoQuick.</span
-                    >
-                  </section>
-                </section>
-                <!-- END STEP 1 -->
-
-                <!-- STEP 3 -->
-                <h2></h2>
-                <section
-                  class="step"
-                  role="intro-next"
-                  data-role="touch"
-                  data-on-swipe-right="goBack"
-                  data-on-swipe-left="goNext"
-                >
-                  <header>
-                    <p class="text-5xl" word="Follow the guide"></p>
-                    <p class="text-3xl" word="to inject correctly"></p>
-                  </header>
-                  <img
-                    class="w-[86.1%]"
-                    src="./assets/icons/follow-the-guide.png"
-                    alt=""
-                    role="intro-next"
-                  />
-                  <div class="mt-8">
-                    <p
-                      class="text-[1.6rem] font-semibold"
-                      word="Hello, I'm your guide,Virna Let the Virtual Nurse guide you through the exact steps to inject your medication safely.
-"
-                    ></p>
-                  </div>
-                </section>
-                <!-- END STEP 2 -->
-
-                <!-- STEP  3-->
-                <h2></h2>
-                <section
-                  class="step"
-                  data-role="touch"
-                  data-on-swipe-right="goBack"
-                  data-on-swipe-left="goNext"
-                >
-                  <header>
-                    <p class="text-5xl" word="View injection site"></p>
-                    <p class="text-3xl" word="& learn about all areas"></p>
-                  </header>
-                  <img
-                    class="w-[86.1%]"
-                    src="./assets/icons/step5.png"
-                    alt=""
-                    role="intro-next"
-                  />
-                  <div>
-                    <p
-                      class="text-[1.6rem] font-semibold"
-                      word="Choose your injection site every day and learn about different areas to avoid injection in the same spot in every day."
-                    ></p>
-                  </div>
-                </section>
-                <!-- END STEP 3 -->
-
-                <h2></h2>
-                <section
-                  class="step"
-                  data-role="touch"
-                  data-on-swipe-right="goBack"
-                  data-on-swipe-left="goNext"
-                >
-                  <header>
-                    <p class="text-5xl" word="Use the device"></p>
-                    <p class="text-3xl" word="correctly"></p>
-                  </header>
-                  <img
-                    class="w-[86.1%]"
-                    src="./assets/icons/step7.png"
-                    alt=""
-                    role="intro-next"
-                  />
-                  <div>
-                    <p
-                      class="text-[1.6rem] font-semibold"
-                      word="Read our detailed device guideline to learn more about the device and how to use it correcly."
-                    ></p>
-                  </div>
-                </section>
-                <!-- END STEP 5 -->
-
-                <!-- STEP  6-->
-                <h2></h2>
-                <section
-                  class="step"
-                  data-role="touch"
-                  data-on-swipe-right="goBack"
-                >
-                  <header>
-                    <p class="text-5xl" word="Find notes & tips"></p>
-                    <p class="text-3xl" word="about each injection step"></p>
-                  </header>
-                  <img class="w-[86.1%]" src="./assets/icons/step8.png" alt="" />
-                  <div>
-                    <p
-                      class="text-[1.6rem] font-semibold"
-                      word="You can find tips & notes in the injection guide section by clicking on the info icon in the top right corner."
-                    ></p>
-                  </div>
-                </section>
-                <!-- END STEP 6 -->
-              </div>
-              <footer id="Footer">
-                <div class="mt-1">
-                  <section class="flex justify-center gap-2">
-                    <div style="display: none" class="bullet selected"></div>
-                    <div class="bullet selected"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
-                    <!-- <div class="bullet"></div> -->
-                  </section>
-                </div>
-                <section class="mt-4">
-                  <p
-                    class="cursor-pointer text-[1.6rem] inline font-semibold bold-family fixed bottom-10 right-10 h-16 w-30"
-                    id="skipIntroBtn"
-                  >
-                    Skip intro
-                    <span><img src="./assets/icons/Arrow.svg" alt="" /></span>
-                  </p>
-                </section>
-              </footer>
-            </div>
                 </section>
             </div>
         </div>
     </div>
-    </div>
+    
     <!--Please don't remove below section -->
     <script src="./assets/js/jquery-1.9.1.min.js"></script>
     <script src="./assets/js/jquery.cookie-1.3.1.js"></script>

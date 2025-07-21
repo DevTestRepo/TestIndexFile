@@ -2,7 +2,7 @@
 function verify(token_id,cmp_name,cookie_name){
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
-    let token = urlParams.get('token')
+    let token = urlParams.get('token');
     
     if(!isRunningStandalone())
     {
@@ -13,12 +13,12 @@ function verify(token_id,cmp_name,cookie_name){
         else
         {
             window.history.pushState("", "", `${location.pathname}?cmp=${cmp_name}`);
-            setCookie(`${cookie_name}`,1,10);
+            cookie(`${cookie_name}`,1,10);
         }
     }
 }
 
-function setCookie(cname, cvalue, exdays) {
+function cookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();

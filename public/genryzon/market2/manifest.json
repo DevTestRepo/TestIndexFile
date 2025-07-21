@@ -1,0 +1,35 @@
+{
+    "name": "Ngenla Virtual Nurse",
+    "short_name": "Virtual Nurse",
+    "icons": [
+        {
+            "src": "../assets/icons/pwa_logo_48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "../assets/icons/pwa_logo_96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "../assets/icons/pwa_logo_144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "../assets/icons/pwa_logo_192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "../assets/icons/pwa_logo_512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFF",
+    "theme_color": "#FFF"
+}

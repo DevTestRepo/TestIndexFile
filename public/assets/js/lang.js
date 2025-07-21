@@ -26,10 +26,11 @@ const locales = {
         "Tap on the 'Add to home screen' option": "Tap on the \"Add to home screen\" option",
         "Tap the 'Add' button at the top of the screen": "Tap the \"Add\" button at the top of the screen",
         "step4Text": "Let the Virtual Nurse guide you through the exact steps to inject your medication safely.",
-        "step5Text": "Choose your injection site every day and learn about different areas to avoid injection in the same spot every day.",
+        "step5Text": "Choose your injection site and learn about different areas to avoid injection in the same spot in every injection time.",
         "step6Text": "If you start to use a new device, you can  easily change your device to another one.",
-        "step7Text": "Read our detailed device guideline to learn more about the device and how to use it correcly.",
-
+        "step7Text": "Read our detailed patient information leaflet to learn more about the device and how to use it correctly.",
+        "step8Text": "You can find tips & notes in  the injection guide section by clicking on the info icon in the top right corner.",
+        "Select your language":"Select your language"
     },
     "ar": {
         "Select language": "اختيار اللغة",
@@ -49,7 +50,7 @@ const locales = {
         "Tap on the share button at the bottom of the screen": "Tap on the share button at the bottom of the screen",
         "Tap on the 'Add to home screen' option": "Tap on the \"Add to home screen\" option",
         "Tap the 'Add' button at the top of the screen": "Tap the \"Add\" button at the top of the screen",
-        "step4Text": "Read our detailed device guideline to learn more about the pen and how to use it correcly.",
+        "step4Text": "Read our detailed patient information leaflet to learn more about the device and how to use it correctly.",
 
     }
 };

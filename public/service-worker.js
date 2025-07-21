@@ -1,4 +1,4 @@
-var cacheName = 'syn-virtualnursegenotropinin-cache';
+var cacheName = 'syn-pfizervirtualnursengenin-cache';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(

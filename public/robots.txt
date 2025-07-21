@@ -1,4 +1,4 @@
-Sitemap: https://www.virtualnurse-genotropin.in/sitemap.xml
+Sitemap: https://pfizervirtualnursengenin.com/sitemap.xml
 
 User-agent: *
 allow: /
